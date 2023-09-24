@@ -1,4 +1,5 @@
 const nodeResolve = require('rollup-plugin-node-resolve');
+const common = require('./rollup.js');
 module.exports = {
   input: 'src/index.js',
   output: {
@@ -11,5 +12,6 @@ module.exports = {
       main: true,
       extendsions: ['.js'],
     }),
+    common.getComplier(),
   ],
 }
