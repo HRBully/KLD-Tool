@@ -3,11 +3,14 @@
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
     "build:aio": "rollup -c config/rollup.config.aio.js",
-    "build": "npm run build:self && npm run build:esm && npm run build:aio"
+    "build": "npm run build:self && npm run build:esm && npm run build:aio",
+    "test": "mocha"
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
     "@babel/preset-env": "^7.22.20",
+    "expect.js": "^0.3.1",
+    "mocha": "^3.5.3",
     "rollup": "^0.60.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^3.0.3"
