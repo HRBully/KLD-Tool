@@ -1,4 +1,6 @@
 {
+  "name": "kdl-tool",
+  "version": "0.0.1",
   "scripts": {
     "build:self": "rollup -c config/rollup.config.js",
     "build:esm": "rollup -c config/rollup.config.esm.js",
